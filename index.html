@@ -1,0 +1,86 @@
+<html>
+<head>
+	<!--meta http-equiv="refresh" content="3"-->
+	<style>
+		*{
+			position: relative;
+			transition: 0.1s;
+		}
+		body, html{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-color: hsl(43, 58%, 62%);
+		}
+		html{
+			font-size: 100%;
+		}
+		body{
+			min-height: 100%;
+			box-shadow: 0 0 4em 2px rgba(0, 0, 0, 0.2) inset;
+		}
+		.pusher{clear: both;}
+		.rounded{border-radius: 1em;}
+		.sunken{background: rgba(63, 63, 63, 0.1);}
+		.raised{background: rgba(191, 191, 191, 0.1);}
+		.nav ul, .nav li{
+			display: inline-block;
+		}
+		.nav ul{
+			width: 100%;
+		}
+		.nav li{
+			width: 15%;
+			line-height: 2em;
+			background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+			text-align: center;
+			font-family: fantasy;
+			letter-spacing: 2px;
+			float: left;
+			cursor: pointer;
+		}
+		.nav li:hover, .nav li:active{
+			outline: rgba(0, 0, 0, 0.1) solid 1px;
+		}
+		.nav li{
+			box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1) inset, 2px 2px 6px rgba(255, 255, 255, 0.1) inset;
+		}
+		.nav li:hover{
+			box-shadow: 0 0 9em rgba(191, 191, 191, 0.1) inset, -2px -2px 6px rgba(0, 0, 0, 0.3) inset, 2px 2px 6px rgba(255, 255, 255, 0.3) inset;
+			letter-spacing: 4px;
+		}
+		.nav li:active{
+			box-shadow: 0 0 9em rgba(63, 63, 63, 0.1) inset, 2px 2px 6px rgba(0, 0, 0, 0.3) inset, -2px -2px 6px rgba(255, 255, 255, 0.3) inset;
+			letter-spacing: 1px;
+		}
+		.nav li>a{
+			display: block;
+			text-decoration: none;
+		}
+		a, a:link, a:visited, a:hover, a:active{
+			color: rgba(0, 0, 0, 0.7);
+		}
+	</style>
+</head>
+<body>
+	<div class="nav raised">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">News</a>
+			</li>
+			<li>
+				<a href="#">Projects</a>
+			</li>
+			<li>
+				<a href="#">Bio</a>
+			</li>
+			<li>
+				<a href="#">Extra</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
